@@ -1,12 +1,12 @@
-QUMO QUEST 510 or CUBOT X6
+HTC 816G
 ===============
 
 Build Command
 
 kernel:
 
-cd q510_qumo
-./mk -o=TARGET_BUILD_VARIANT=user q510_qumo n k
+cd htc_816g
+./mk -o=TARGET_BUILD_VARIANT=user htc_816g n k
 
 Then, to create the boot.img:
 
@@ -15,4 +15,4 @@ Then, to create the boot.img:
 
 lk.bin:
 
-./mk -o=TARGET_BUILD_VARIANT=user q510_qumo n lk
+./mk -o=TARGET_BUILD_VARIANT=user htc_816g n lk

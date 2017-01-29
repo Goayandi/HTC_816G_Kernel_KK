@@ -1584,7 +1584,7 @@ CUSTOM_KERNEL_HDMI=
 MTK_HDMI_SUPPORT=no
 
 # to choose which boot logo folder would be used, the boot logo folder path is mediatek/custom/common/uboot/logo/
-BOOT_LOGO=q510_qumo
+BOOT_LOGO=htc_816g
 
 # To choose kernel LCM driver name
 CUSTOM_KERNEL_LCM=otm1283a_jmo otm1283a_hd_pngd
@@ -1620,9 +1620,9 @@ MTK_WIFI_HOTSPOT_SUPPORT=yes
 MTK_WLAN_SUPPORT=yes
 #CREATE_PROJECT_INFO=20140220232929
 # User can input ASCII string which is showed in About phone and bootimg header.
-CUSTOM_BUILD_VERNO=S1_QUMO_Q510_2015_12_13
+CUSTOM_BUILD_VERNO=HTC_816G_v1
 # add for internal verno customization by jinhaijian showed in 9375
-CUSTOM_INTERNAL_BUILD_VERNO=Q510_QUMO_V1_S1213
+CUSTOM_INTERNAL_BUILD_VERNO=htc_816g_V1
 #add for rgk internal verno ,showed in 9875, it same as CUSTOM_INTERNAL_BUILD_VERN O if it is null
 RGK_INTERNAL_BUILD_VERNO=
 #ALPS.JB9.MP.V1.10 , showed in About phone-->version info
@@ -1633,17 +1633,17 @@ RGK_MEDIATEK_BINARY_92_KK_SUPPORT=yes
 #A: }
 
 #modify BUG_ID:DELQ-183 zengchuiguo 20140513 (start)
-RGK_INTERNAL_SD_VOLUME_NAME=Q510^QUMO
-RGK_MTP_LABEL=Q510 QUMO
-RGK_PTP_LABEL=Q510 QUMO
+RGK_INTERNAL_SD_VOLUME_NAME=HTC^816G
+RGK_MTP_LABEL=816 HTC
+RGK_PTP_LABEL=816 HTC
 #modify BUG_ID:DELQ-183 zengchuiguo 20140513 (end)
 
 #modify BUG_ID:JWLW-1205 zengchuiguo 20140125 (start)
-RGK_USB_DRIVER_DISPLAY_MANUFACTURER=Q510
+RGK_USB_DRIVER_DISPLAY_MANUFACTURER=816G
 #The total length of RGK_USB_DRIVER_DISPLAY_PRODUCT_PART1 and RGK_USB_DRIVER_DISPLAY_PRODUCT_PART1 should not be longer than 28 characters, other wise they
 #would be cut off. If RGK_USB_DRIVER_DISPLAY_PRODUCT_PART1=iris, and RGK_USB_DRIVER_DISPLAY_PRODUCT_PART2=450, they would be shown as "iris 450"
 #Below separator symbol "$" will be replaced by blank space 
-RGK_USB_DRIVER_DISPLAY_PRODUCT_PART1=QUMO
+RGK_USB_DRIVER_DISPLAY_PRODUCT_PART1=HTC
 RGK_USB_DRIVER_DISPLAY_PRODUCT_PART2=
 
 #modify BUG_ID:JWLW-1205 zengchuiguo 20140125 (end)
@@ -1723,8 +1723,8 @@ RGK_CTS_WHITE_SIGNAL_ICONS_SUPPORT=yes
 #A: }
 
 #add huruilong jllb-2597
-#very very important:  it just add for q510_qumo, other project must delete it immediately
-RGK_FRONT_CAMERA_VALUES_FOR_QUMO=yes
+#very very important:  it just add for htc_816g, other project must delete it immediately
+#RGK_FRONT_CAMERA_VALUES_FOR_QUMO=yes
 #end 
 
 

@@ -153,7 +153,7 @@
 	#define BAR_RIGHT           (610)
 	#define BAR_BOTTOM          (678)
 
-#elif defined(HD720) || defined(CU_HD720) || defined(CMCC_HD720) || defined(q510_qumo)
+#elif defined(HD720) || defined(CU_HD720) || defined(CMCC_HD720) || defined(htc_816g)
 	// hd720 720*1280
 
 	// battery capacity rectangle

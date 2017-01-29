@@ -14,8 +14,8 @@
      limitations under the License.
 -->
 
-<!-- This is the standard set of features for a touchscreen that does not
-     support multitouch. -->
+<!-- This is the standard feature indicating that the device includes WiFi. -->
 <permissions>
-    <feature name="android.hardware.touchscreen" />
+    <feature name="android.hardware.wifi" />
 </permissions>
+

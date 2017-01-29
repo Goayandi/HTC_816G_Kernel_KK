@@ -1,6 +1,6 @@
 #!/bin/bash
 #make to bootimage.sh
-PRJ=q510_qumo
+PRJ=htc_816g
  echo "		gen out/target/product/tinno89_wet_kk/ boot.img ..."
  mediatek/build/tools/images/acp -uv out/target/product/${PRJ}/kernel_${PRJ}.bin out/target/product/${PRJ}/kernel
  mediatek/build/tools/images/mkbootfs mediatek/host/root | mediatek/build/tools/images/minigzip > out/target/product/${PRJ}/ramdisk.img

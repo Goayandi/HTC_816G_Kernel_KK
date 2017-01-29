@@ -1,7 +1,6 @@
 # MTK project .rc configure 
 on early-init
 
-
 on post-fs-data
 
 #
@@ -38,11 +37,13 @@ on post-fs-data
     mknod /dev/wmtWifi c 153 0
     chmod 0660 /dev/wmtWifi
     chown system system /dev/wmtWifi
-
+    chown root system /sys/class/power_supply/battery/device/BatteryTestStatus
 # BT
     chmod 0660 /dev/stpbt
     chown bluetooth radio /dev/stpbt
-
+#DUAL_SPEAKER
+    chown system system /sys/devices/platform/AudDrv_driver_device.0/up_speaker_turn_on
+    chown system system /sys/devices/platform/AudDrv_driver_device.0/up_speaker_turn_off
 # GPS
     chown gps gps /dev/stpgps
     chown gps gps /sys/class/gpsdrv/gps/pwrctl
@@ -85,6 +86,11 @@ service conn_launcher /system/bin/logwrapper /system/bin/6620_launcher -p /syste
     user system
     group system
     class core
+#yanghaichao add
+#service bmx056d /system/bin/bmx056d
+#	class main
+#	oneshot
 #
 # Connectivity related services (End)
 #
+
