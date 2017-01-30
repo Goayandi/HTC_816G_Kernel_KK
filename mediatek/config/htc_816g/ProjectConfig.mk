@@ -178,7 +178,7 @@ CUSTOM_KERNEL_USB=mt6577
 CUSTOM_KERNEL_VIBRATOR=vibrator
 
 # To choose LK LCM driver name
-CUSTOM_LK_LCM=otm1283a_jmo otm1283a_hd_pngd
+CUSTOM_LK_LCM=otm1283a_jmo hx8394d_hd720_dsi_vdo_yushun
 
 # A mechanism for customer to enable their own sign key.
 CUSTOM_PRELOADER_CUSTOM=custom
@@ -1587,10 +1587,10 @@ MTK_HDMI_SUPPORT=no
 BOOT_LOGO=htc_816g
 
 # To choose kernel LCM driver name
-CUSTOM_KERNEL_LCM=otm1283a_jmo otm1283a_hd_pngd
+CUSTOM_KERNEL_LCM=otm1283a_jmo hx8394d_hd720_dsi_vdo_yushun
 
 # To choose uboot LCM driver name
-CUSTOM_UBOOT_LCM=otm1283a_jmo otm1283a_hd_pngd
+CUSTOM_UBOOT_LCM=otm1283a_jmo hx8394d_hd720_dsi_vdo_yushun
 
 # To set LCM resolution height size
 LCM_HEIGHT=1280 #jww 1280

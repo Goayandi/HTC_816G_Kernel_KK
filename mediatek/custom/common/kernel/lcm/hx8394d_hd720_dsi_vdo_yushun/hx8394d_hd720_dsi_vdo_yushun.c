@@ -349,26 +349,27 @@ static void lcm_get_params(LCM_PARAMS * params)
 
 	// DSI
 	/* Command mode setting */
-	params->dsi.LANE_NUM = LCM_FOUR_LANE;
+	params->dsi.LANE_NUM = LCM_ONE_LANE;
 	//The following defined the fomat for data coming from LCD engine.
-	params->dsi.data_format.color_order = LCM_COLOR_ORDER_RGB;
+	params->dsi.data_format.color_order = (LCM_COLOR_ORDER)"720*1280";
 	params->dsi.data_format.trans_seq = LCM_DSI_TRANS_SEQ_MSB_FIRST;
 	params->dsi.data_format.padding = LCM_DSI_PADDING_ON_LSB;
 	params->dsi.data_format.format = LCM_DSI_FORMAT_RGB888;
 
 	params->dsi.intermediat_buffer_num = 0;	//because DSI/DPI HW design change, this parameters should be 0 when video mode in MT658X; or memory leakage
 
+	params->dsi.packet_size = 2;
 	params->dsi.PS = LCM_PACKED_PS_24BIT_RGB888;
-	params->dsi.word_count = 720 * 3;
+	params->dsi.word_count = 0;
 
-		params->dsi.vertical_sync_active				= 0x3;// 3    2
-		params->dsi.vertical_backporch					= 0x0E;// 20   1
+		params->dsi.vertical_sync_active				= 0;// 3    2
+		params->dsi.vertical_backporch					= 2;// 20   1
 		params->dsi.vertical_frontporch					= 0x10; // 1  12
 		params->dsi.vertical_active_line				= FRAME_HEIGHT; 
 
-		params->dsi.horizontal_sync_active				= 0x04;// 50  2
-		params->dsi.horizontal_backporch				= 0x22 ;
-		params->dsi.horizontal_frontporch				= 0x18 ;
+		params->dsi.horizontal_sync_active				= 4;// 50  2
+		params->dsi.horizontal_backporch				= 12;
+		params->dsi.horizontal_frontporch				= 51;
 		params->dsi.horizontal_active_pixel				= FRAME_WIDTH;
 
 	// Bit rate calculation
@@ -474,8 +475,8 @@ static unsigned int lcm_compare_id(void)
 // ---------------------------------------------------------------------------
 //  Get LCM Driver Hooks
 // ---------------------------------------------------------------------------
-LCM_DRIVER otm1283a_hd_pngd_lcm_drv = {
-	.name = "otm1283a_hd_pngd",
+LCM_DRIVER hx8394d_hd720_dsi_vdo_yushun_lcm_drv = {
+	.name = "hx8394d_hd720_dsi_vdo_yushun",
 	.set_util_funcs = lcm_set_util_funcs,
 	.get_params = lcm_get_params,
 	.init = lcm_init,
