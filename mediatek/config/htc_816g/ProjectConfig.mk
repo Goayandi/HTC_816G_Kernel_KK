@@ -54,20 +54,20 @@ CUSTOM_HAL_EEPROM=dummy_eeprom
 CUSTOM_HAL_FLASHLIGHT=constant_flashlight
 
 # User space image sensor driver. Define  project used all image sensors. The value is combination of CUSTOM_HAL_MAIN_IMGSENSOR, CUSTOM_HAL_MAIN_BACKUP_IMGSENSOR, CUSTOM_HAL_SUB_IMGSENSOR, and CUSTOM_HAL_SUB_BACKUP_IMGSENSOR
-CUSTOM_HAL_IMGSENSOR=gc2235_mipi_raw imx111_mipi_raw imx219_mipi_raw
+CUSTOM_HAL_IMGSENSOR=s5k5e2ya_mipi_raw
 
 #=CUSTOM_HAL_MAIN_LENS +CUSTOM_HAL_MAIN_BACKUP_LENS + CUSTOM_HAL_SUB_LENS + CUSTOM_HAL_SUB_BACKUP_LENS
-CUSTOM_HAL_LENS=dummy_lens ov8825af
+CUSTOM_HAL_LENS=DW9714AF
 CUSTOM_HAL_MAIN2_IMGSENSOR=
 
 # lens driver config for main camera (2nd solution)
 CUSTOM_HAL_MAIN_BACKUP_LENS=
 
 # User space image sensor  driver: Main camera (rear camera) used sensor related tuning, setting and calibration information.Value is used main sensor name.
-CUSTOM_HAL_MAIN_IMGSENSOR=imx111_mipi_raw
+CUSTOM_HAL_MAIN_IMGSENSOR=
 
 # lens driver config for main camera
-CUSTOM_HAL_MAIN_LENS=ov8825af
+CUSTOM_HAL_MAIN_LENS=
 
 # M-sensor hal layer library including daemon
 CUSTOM_HAL_MSENSORLIB=mmc328x akm8975 ami304 yamaha530 mag3110 akmd8963 bmm050 mc6420 mmc3416x s62xd lsm303md hscdtd006 qmc5983 akmd09911 bmm056
@@ -79,16 +79,16 @@ CUSTOM_HAL_SENSORS=sensor
 CUSTOM_HAL_SUB_BACKUP_LENS=
 
 # User space driver: Sub camera (front camera )used sensor related tuning, setting and calibration information. Value is used sub sensor name.
-CUSTOM_HAL_SUB_IMGSENSOR=gc2235_mipi_raw
+CUSTOM_HAL_SUB_IMGSENSOR=
 
 # lens driver config for video telephony camera
-CUSTOM_HAL_SUB_LENS=dummy_lens
+CUSTOM_HAL_SUB_LENS=
 
 # accelerometer sensor to detect accelerometer from x y z axis.
-CUSTOM_KERNEL_ACCELEROMETER=bma222E #jww bma056
+CUSTOM_KERNEL_ACCELEROMETER=bma2xx
 
 # ALSPS sensor driverto detect ambint light and the object is close or far awary from device
-CUSTOM_KERNEL_ALSPS=cm36283
+CUSTOM_KERNEL_ALSPS=EPL2182
 
 # Pressure sensor driver to detect pressure
 CUSTOM_KERNEL_BAROMETER=
@@ -116,13 +116,13 @@ CUSTOM_KERNEL_EEPROM=dummy_eeprom
 CUSTOM_KERNEL_FLASHLIGHT=constant_flashlight
 
 # gyro driver
-CUSTOM_KERNEL_GYROSCOPE=
+CUSTOM_KERNEL_GYROSCOPE=mpu3050c
 
 # detect headset cable plug in and out
 CUSTOM_KERNEL_HEADSET=accdet
 
 #Kernel space image sensor driver.Define  project used all image sensors.The value is combination of CUSTOM_KERNEL_MAIN_IMGSENSOR, CUSTOM_KERNEL_MAIN_BACKUP_IMGSENSOR, CUSTOM_KERNEL_SUB_IMGSENSOR, and CUSTOM_KERNEL_SUB_BACKUP_IMGSENSOR
-CUSTOM_KERNEL_IMGSENSOR=gc2235_mipi_raw imx111_mipi_raw imx219_mipi_raw
+CUSTOM_KERNEL_IMGSENSOR=s5k5e2ya_mipi_raw
 
 # key pad driver to report key event
 CUSTOM_KERNEL_KPD=kpd
@@ -131,7 +131,7 @@ CUSTOM_KERNEL_KPD=kpd
 CUSTOM_KERNEL_LEDS=mt65xx
 
 # same as CUSTOM_HAL_LENS
-CUSTOM_KERNEL_LENS=dummy_lens ov8825af
+CUSTOM_KERNEL_LENS=DW9714AF
 
 # compass driver to detect compass raw data and report orientatino data
 CUSTOM_KERNEL_MAGNETOMETER=#jww bmm056-new
@@ -144,10 +144,10 @@ CUSTOM_KERNEL_MAIN_BACKUP_IMGSENSOR=
 CUSTOM_KERNEL_MAIN_BACKUP_LENS=
 
 # Kernel space image sensor driver:Main camera (rear camera) used sensor driver.Value is used main sensor name.
-CUSTOM_KERNEL_MAIN_IMGSENSOR=imx111_mipi_raw
+CUSTOM_KERNEL_MAIN_IMGSENSOR=
 
 # lens driver config for main camera
-CUSTOM_KERNEL_MAIN_LENS=ov8825af
+CUSTOM_KERNEL_MAIN_LENS=
 
 # RTC driver customization
 CUSTOM_KERNEL_RTC=rtc
@@ -163,10 +163,10 @@ CUSTOM_KERNEL_SSW=ssw_single
 CUSTOM_KERNEL_SUB_BACKUP_LENS=
 
 # Kernel space image sensor driver:Sub camera (front camera) used sensor driver.Value is used sub sensor name.
-CUSTOM_KERNEL_SUB_IMGSENSOR=gc2235_mipi_raw
+CUSTOM_KERNEL_SUB_IMGSENSOR=
 
 # lens driver config for video telephony camera
-CUSTOM_KERNEL_SUB_LENS=dummy_lens
+CUSTOM_KERNEL_SUB_LENS=
 
 # touch driver  need to report correct touch axes
 CUSTOM_KERNEL_TOUCHPANEL=FT5336 GT9XX_3
@@ -382,7 +382,7 @@ MTK_BIP_SCWS=no
 MTK_BQ24156_SUPPORT=no
 
 # BQ24158 charger support
-MTK_BQ24158_SUPPORT=no
+MTK_BQ24158_SUPPORT=yes
 MTK_BQ24160_SUPPORT=no
 
 # for charger IC BQ24297 support
