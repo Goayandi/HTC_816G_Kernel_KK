@@ -36,7 +36,7 @@ lk.bin:
 | Flash | `Q7XSAB` | ? | ? |
 | Gyroscope | `MPU3050c` | YES | ? |
 | Lens #1 | `DW9714AF (i2c 1-0027)` | YES | ? |
-| Lens #2 | `DW9761BAF (i2c 1-0018)` | ? | ? |
+| Lens #2 | `DW9761BAF (i2c 1-0018)` | YES | ? |
 | Other #1 | `CAM_CAL_DRV (i2c 1-0027)` | ? | ? |
 | Other #2 | `kd_camera_hw (i2c 1-007f)` | ? | ? |
 | Other #3 | `dummy_eeprom (i2c 1-0050)` | ? | ? |
