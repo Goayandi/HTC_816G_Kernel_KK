@@ -54,7 +54,7 @@ CUSTOM_HAL_EEPROM=dummy_eeprom
 CUSTOM_HAL_FLASHLIGHT=constant_flashlight
 
 # User space image sensor driver. Define  project used all image sensors. The value is combination of CUSTOM_HAL_MAIN_IMGSENSOR, CUSTOM_HAL_MAIN_BACKUP_IMGSENSOR, CUSTOM_HAL_SUB_IMGSENSOR, and CUSTOM_HAL_SUB_BACKUP_IMGSENSOR
-CUSTOM_HAL_IMGSENSOR=s5k5e2ya_mipi_raw
+CUSTOM_HAL_IMGSENSOR=ov13850_mipi_raw s5k3l2xx_mipi_raw s5k5e2ya_mipi_raw 
 
 #=CUSTOM_HAL_MAIN_LENS +CUSTOM_HAL_MAIN_BACKUP_LENS + CUSTOM_HAL_SUB_LENS + CUSTOM_HAL_SUB_BACKUP_LENS
 CUSTOM_HAL_LENS=DW9714AF
@@ -122,7 +122,7 @@ CUSTOM_KERNEL_GYROSCOPE=mpu3050c
 CUSTOM_KERNEL_HEADSET=accdet
 
 #Kernel space image sensor driver.Define  project used all image sensors.The value is combination of CUSTOM_KERNEL_MAIN_IMGSENSOR, CUSTOM_KERNEL_MAIN_BACKUP_IMGSENSOR, CUSTOM_KERNEL_SUB_IMGSENSOR, and CUSTOM_KERNEL_SUB_BACKUP_IMGSENSOR
-CUSTOM_KERNEL_IMGSENSOR=s5k5e2ya_mipi_raw
+CUSTOM_KERNEL_IMGSENSOR=ov13850_mipi_raw s5k3l2xx_mipi_raw s5k5e2ya_mipi_raw
 
 # key pad driver to report key event
 CUSTOM_KERNEL_KPD=kpd

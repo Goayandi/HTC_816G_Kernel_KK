@@ -25,8 +25,8 @@ lk.bin:
 | PMIC #3 | `mt6333 (i2c 1-006b)` | YES | ? |
 | PMIC #4 | `tps6128 (i2c 1-0075)` | ? | ? |
 | MMC | `emmc` | ? | ? |
-| Camera #1 | `ov13850_mipi_raw` | ? | ? |
-| Camera #2 | `s5k3l2xx_mipi_raw` | ? | ? |
+| Camera #1 | `ov13850_mipi_raw` | YES | ? |
+| Camera #2 | `s5k3l2xx_mipi_raw` | YES | ? |
 | Camera #3 | `s5k5e2ya_mipi_raw` | YES | ? |
 | Camera #4 | `hi551mipi_raw` | ? | ? |
 | Accelerometer | `bma2xx (i2c 2-0018)` | YES | ? |
